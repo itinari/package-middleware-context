@@ -1,8 +1,10 @@
 import {Request, Response, NextFunction} from 'express'
 
 declare module 'express' {
+  interface RequestContext {}
+
   interface Request {
-    ctx: {}
+    ctx: RequestContext
   }
 }
 
