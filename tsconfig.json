@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es2018",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowJs": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "downlevelIteration": true,
@@ -18,9 +19,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
     "sourceMap": true,
-    "types": ["node"],
-    "lib": ["es6"],
+    "resolveJsonModule": true,
+    "types": ["node", "mocha"],
+    "lib": ["esnext"],
     "declaration": true,
     "outDir": "dist"
   },
